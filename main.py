@@ -83,7 +83,7 @@ TEST_CSV = f'{ROOT_DIR}/test-metadata.csv'
 TEST_HDF = f'{ROOT_DIR}/test-image.hdf5'
 SAMPLE = f'{ROOT_DIR}/sample_submission.csv'
 
-#Best fold trained weights for each model
+#Best fold trained weights for each model - These models were trained on other Kaggle Notebooks
 WEIGHT_effnetv1b0 = "/kaggle/input/isic2024-pytorch-all-models-training/Full_train_efficientnet_b0_final_AUROC0.9666_Loss0.2627_epoch20.bin"
 WEIGHT_effvit = "/kaggle/input/isic2024-pytorch-all-models-training/Full_train_efficientvit_b0_2_final_AUROC0.9130_Loss0.3968_epoch19.bin"
 WEIGHT_ghostnet = "/kaggle/input/isic2024-pytorch-all-models-training/Full_train_ghostnet_100_final_AUROC0.9679_Loss0.2483_epoch20.bin"
@@ -182,8 +182,8 @@ class ISICModel_AVGpool(nn.Module):
 
     def forward(self, images):
         features = self.model(images)
-        logits = self.linear(features)  # Apply the linear layer to get the logits
-        output = self.sigmoid(logits)  # Apply sigmoid to get the final output
+        logits = self.linear(features)
+        output = self.sigmoid(logits)
         return output
 
 class ISICModel_linear(nn.Module):
@@ -194,7 +194,9 @@ class ISICModel_linear(nn.Module):
     def forward(self, images):
         return self.sigmoid(self.model(images))
 
-    
+
+# Not all models had the same architecture, so we need to define different classes
+
 gem_models = [
     # GEM pooling models
     ("tf_efficientnet_b0.ns_jft_in1k", "efficientnet_b0"),
@@ -293,3 +295,5 @@ if __name__ == "__main__":
         
     # Save the predictions to a CSV file
     df.to_csv('test_preds_ER.csv', index=False)
+
+# USAGE: python main.py --models efficientnet_b0 mixnet_s mobilenetv2_050 ghostnet_100
