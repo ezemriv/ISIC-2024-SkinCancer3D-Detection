@@ -1,10 +1,4 @@
-<img src="https://img.shields.io/badge/Python-white?logo=Python" style="height: 25px; width: auto;">
-<img src="https://img.shields.io/badge/pandas-white?logo=pandas&logoColor=250458" style="height: 25px; width: auto;">
-<img src="https://img.shields.io/badge/polars-white?logo=polars&logoColor=blue" style="height: 25px; width: auto;">
-<img src="https://img.shields.io/badge/NumPy-white?logo=numpy&logoColor=013243" style="height: 25px; width: auto;">
-<img src="https://img.shields.io/badge/PyTorch-white?logo=PyTorch" style="height: 25px; width: auto;">
-<img src="https://img.shields.io/badge/Scikit_learn-white?logo=scikitlearn&logoColor=F7931E" style="height: 25px; width: auto;">
-<img src="https://img.shields.io/badge/mlflow-white?logo=mlflow&logoColor=blue" style="height: 25px; width: auto;">
+<img src="https://img.shields.io/badge/Python-white?logo=Python" style="height: 25px; width: auto;">  <img src="https://img.shields.io/badge/pandas-white?logo=pandas&logoColor=250458" style="height: 25px; width: auto;">  <img src="https://img.shields.io/badge/polars-white?logo=polars&logoColor=blue" style="height: 25px; width: auto;">  <img src="https://img.shields.io/badge/NumPy-white?logo=numpy&logoColor=013243" style="height: 25px; width: auto;">  <img src="https://img.shields.io/badge/PyTorch-white?logo=PyTorch" style="height: 25px; width: auto;">  <img src="https://img.shields.io/badge/Scikit_learn-white?logo=scikitlearn&logoColor=F7931E" style="height: 25px; width: auto;">  <img src="https://img.shields.io/badge/mlflow-white?logo=mlflow&logoColor=blue" style="height: 25px; width: auto;">
 
 <br>
 
